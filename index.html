@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mothers Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body class="BODY">
+    <audio id="background-music" autoplay loop>
+    <source src="./chill.mp3" type="audio/mpeg">
+</audio>
+<h1>HAAPY MOTHER'S DAY</h1>
+   <button onclick="window.location.href='./main.html';">Click Me!</button> 
+     <style>
+        body{
+            background:linear-gradient(to bottom, #a8472f, #feb47b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+             font-family: "Shrikhand", serif;
+             text-shadow: 3px 2px 0 rgb(40, 1, 1);
+               color: #873a00;
+
+            button{
+                background-color: #501000;
+                color: #feb47b;
+                padding: 10px 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            button:hover{
+                 background-color: #583128;
+                  color: #c2a996;
+                  transition: all .5s;
+            }
+        }
+     </style>
+
+     <script>
+         const backgroundMusic = document.getElementById("backgroundMusic");
+        window.addEventListener("load", async function() {
+    try {
+        await backgroundMusic.play();
+        console.log("Background music started automatically.");
+    } catch (error) {
+        console.log("Autoplay blocked: ", error);
+    }
+});
+     </script>
+</body>
+</html>
